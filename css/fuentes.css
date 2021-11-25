@@ -1,0 +1,16 @@
+/*font-family: 'Mukta', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Open Sans', sans-serif;*/
+
+.element.style {
+    font-family: 'Nunito Sans', Helvetica, Arial;
+}
+
+*{
+    box-sizing: content-box;
+    font-family: 'Open Sans', Helvetica, Arial;
+}
+
+h1{
+    font-size: 35px;
+}

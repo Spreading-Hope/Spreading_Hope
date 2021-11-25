@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="En">
+    <head>
+        <meta sharset="UTF-8">
+        <title>
+          Spreading Hope
+        </title>
+        <link rel="shortcut icon" href="https://i.postimg.cc/zDTjShQ1/IMG-jiji-20210818-WA0077-1.jpg">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/fuentes.css">
+        <link href="https://fonts.googleapis.com/css2?family=Mukta&family=Nunito+Sans:ital,wght@1,200&family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+        <style>
+          .header{
+            background-image: url("Fondos/7.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+          }
+
+          .inicio{
+            background-image: url("Fondos/8.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            margin: 0;
+          }
+
+          .nosotros{
+            background-image: url("Fondos/9.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            margin: 0;
+          }
+
+          .intereses{
+            background-image: url("Fondos/10.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            margin: 0;
+          }
+          .interes{
+            background-image: url("Fondos/12.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            margin: 0;
+          }
+        
+          .contactenos{
+            background-image: url("Fondos/11.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            margin: 0;
+          }
+
+          .btn {
+            border: white ;
+            color: black;
+            padding: 15px 8.5%;
+            font-size: 15px;
+            cursor: pointer;
+            float: center;
+          }
+      
+          button {background-color: #bfb29e;} /* Green */
+          button:hover {background-color: #835827;}
+          </style>
+          <style>
+            .grid-container {
+              display: grid;
+              grid-template-columns: auto auto;
+              padding: 10px;
+            }
+            .grid-item {
+              padding: 20px;
+              font-size: 15px;
+              text-align: center;
+            }
+            </style>       
+  </head>
+  <body>
+  <div class="header">
+    <a id="first"></a>
+      <header>
+        <center>
+        <img src="https://i.postimg.cc/BnS1FLrN/logo.png" alt="logo" width="5%" align="center">
+        <img src="https://i.postimg.cc/RqrNqqc1/spreadinghope.png" alt="superate" width="23%" align="center">
+        </center>
+        <br>
+      </header>
+        <center> 
+        <a href="#inicio"> <button class="btn success"><FONT COLOR="white"><b> BEGINNING</b></FONT></button></a>
+        <a href="#nosotros"><button class="btn info"><FONT COLOR="white"><b>ABOUT US</b></FONT></button></a>
+        <a href="#intereses"><button class="btn warning"><FONT COLOR="white"><b>INTEREST</b></FONT></button></a>
+        <a href="#contacto"><button class="btn danger"><FONT COLOR="white"><b>CONTACT</b></FONT></button></a>
+        </center> 
+        
+        <style>
+
+       
+
+        * {
+          box-sizing: border-box;
+        }
+
+        .row > .column {
+          padding: 0 0px;
+        }
+
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        .column {
+          float: left;
+          width: 33.3%;
+        }
+
+        /* The Modal (background) */
+        .modal {
+          display: none;
+          position: fixed;
+          z-index: 1;
+          padding-top: 100px;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          overflow: auto;
+          background-color: rgba(0, 0, 0, 0.671);
+        }
+
+        /* Modal Content */
+        .modal-content {
+          position: relative;
+          background-color: #fefefe;
+          margin: auto;
+          padding: 0;
+          width: 90%;
+          max-width: 900px;
+        }
+
+        /* The Close Button */
+        .close {
+          color: white;
+          position: absolute;
+          top: 10px;
+          right: 25px;
+          font-size: 35px;
+          font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+          color: #999;
+          text-decoration: none;
+          cursor: pointer;
+        }
+
+        .mySlides {
+          display: none;
+        }
+
+        .cursor {
+          cursor: pointer;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -50px;
+          color: white;
+          font-weight: bold;
+          font-size: 20px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+          -webkit-user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+          background-color: rgba(0, 0, 0, 0.473);
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+
+        img {
+          margin-bottom: -4px;
+        }
+
+        .caption-container {
+          text-align: center;
+          background-color: rgb(0, 0, 0);
+          padding: 2px 16px;
+          color: white;
+        }
+
+        .demo {
+          opacity: 0.6;
+        }
+
+        .active,
+        .demo:hover {
+          opacity: 1;
+        }
+
+        img.hover-shadow {
+          transition: 0.3s;
+        }
+
+        .hover-shadow:hover {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        </style>
+        <br>
+        <br>
+        <div class="row">
+          <div class="column">
+            <img src="https://i.postimg.cc/P59xfSjG/DSC00153-Copy.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="http://2.bp.blogspot.com/-0aCow-gPXUY/UET4c-s84iI/AAAAAAAABQM/Ch735xbGR-Q/s320/DSC00155%2B%2528Copy%2529.JPG" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="http://3.bp.blogspot.com/-Kdfu6ACkkVg/UET4cAlk_MI/AAAAAAAABQA/v2xEebXNy1g/s320/DSC00154%2B%2528Copy%2529.JPG" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+          </div>
+        </div>
+
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+
+            <div class="mySlides">
+              <div class="numbertext"></div>
+              <img src="http://4.bp.blogspot.com/-BpMcPwXkxq4/UET4b9cyoEI/AAAAAAAABP0/e6LKIFuW22s/s320/DSC00153%2B%2528Copy%2529.JPG" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext"></div>
+              <img src="http://2.bp.blogspot.com/-0aCow-gPXUY/UET4c-s84iI/AAAAAAAABQM/Ch735xbGR-Q/s320/DSC00155%2B%2528Copy%2529.JPG" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+              <div class="numbertext"></div>
+              <img src="http://3.bp.blogspot.com/-Kdfu6ACkkVg/UET4cAlk_MI/AAAAAAAABQA/v2xEebXNy1g/s320/DSC00154%2B%2528Copy%2529.JPG" style="width:100%">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+
+
+            <div class="column">
+              <img class="demo cursor" src="http://4.bp.blogspot.com/-BpMcPwXkxq4/UET4b9cyoEI/AAAAAAAABP0/e6LKIFuW22s/s320/DSC00153%2B%2528Copy%2529.JPG" style="width:100%" onclick="currentSlide(1)" alt="Spreading hope">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="http://2.bp.blogspot.com/-0aCow-gPXUY/UET4c-s84iI/AAAAAAAABQM/Ch735xbGR-Q/s320/DSC00155%2B%2528Copy%2529.JPG" style="width:100%" onclick="currentSlide(2)" alt="Spreading hope">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="http://3.bp.blogspot.com/-Kdfu6ACkkVg/UET4cAlk_MI/AAAAAAAABQA/v2xEebXNy1g/s320/DSC00154%2B%2528Copy%2529.JPG" style="width:100%" onclick="currentSlide(4)" alt="Spreading hope">
+            </div>
+          </div>
+        </div>
+
+        <br><br><br><br><br><br><br><br>
+  </div>
+<br>
+<section class="inicio">         
+  <article>
+    <a id="inicio"></a>
+    <br><br>
+      <div class="grid-container">
+          <div class="grid-item"> <br><br><br> <h1 style="text-align: center;"><FONT size="6"> Poverty rate</FONT><br><p class="parrafo"><H3><According to statistical information released by the<BR><FONT size="3%" face="Arial">  Ministry of Health (Minsa) in 2020, in its national<BR> health nutritional survey, 15.8% (1 in 10 children)<BR> remain in a condition of severe malnutrition and the<BR> most vulnerable age group is kept among children<BR> under 2 years of age.<BR>
+              From 2008 to 2019, according to figures from the<BR> Office of the Comptroller General of the Republic,<BR> 1,355 deaths due to malnutrition have been reported.<BR> Of those 488 are under the age of five.</H3></p></div></FONT>
+          <div class="grid-item"><img src="Fondos/Picture1.png" width="80%" align="center"></div>
+          <div class="grid-item"><img src="https://i.postimg.cc/RZq766rK/4-preview-rev-1.png" width="90%" align="center"></div>
+          <div class="grid-item"><h3 class="articulo"><FONT size="3%" face="Arial">As Article 25 of the Universal Declaration of Human Rights <br>says: “Everyone has the right to an adequate standard of <br>living that ensures, as well as their family, health and well<br>-being, especially food ... ". According to the INEC (National <br>Institute of Statistics and Census), their statistics show that<br> malnutrition remains as a priority to improve national health.<br> Specially in indigenous communities where 30% of children <br>are highly vulnerable to this condition. During the pandemic,<br> the seriousness of their nutritional situation has grow.</h3></div></FONT>
+  </article>
+</section>
+<section class="nosotros">
+    <a id="nosotros"></a>
+    <h1 class="title"><br><br><br></h1>
+    <h1 style="color: rgb(255, 255, 255); text-align: center;">Our Objectives</h1>
+    <br>
+    <CENTER>
+    <p style="color: rgb(255, 255, 255); size: 10%> <FRONT face="Arial"> What we want is to take into account the current situation of many families in Panama</FRONT></p>
+    <p style="color: rgb(255, 255, 255); size: 10%;><FRONT face="Arial"> and create awareness of it by  contributing our bit, trying to get more people to join the cause and help more people in the country. </FRONT></p>
+    <p style="color: rgb(255, 255, 255); size: 10%><FRONT face="Arial"> Is important that it be emphasized and it is necessary to ensure that society is fulfilled since it ensures a world</FRONT></p>
+    <p style="color: rgb(255, 255, 255); size: 10%><FRONT face="Arial"> of balanced resources for all people in which it has not been achieved in the last years of society.</FRONT></p>
+    </CENTER>
+    <br><br><br><br><br><br><br>
+</section>
+
+<section class="intereses">
+  <a id="intereses"></a>
+  
+  <br><br><br><br><br><br><br><br><br><br><br><br>
+  <div class="container">
+      <div class="card">
+        <h2><b>Feeding for <br>pregnant women</b></h2>
+        <p>Its objective is to sensitive the public opinion about the serious effects of malnutrition on the health of the pregnant women and her child.</p>
+        <a href="https://www.fundacionbengoa.org/nuestros-intereses/guias/campana-juntos-contra-la-malnutricion/guia-7-alimentacion-para-embarazadas/" Target="0"><p style="color: white;"><b>More information</b></p></a>
+      </div>
+
+      <div class="card">
+        <h2>Food with all irons</h2>
+        <p>A thirty- second audiovisual piece and a printed guide will be the communication tools to stimulate iron consumption and prevent anemia.
+        </style> </p>
+        <a href="https://www.fundacionbengoa.org/nuestros-intereses/guias/campana-juntos-contra-la-malnutricion/guia-13-come-saludable-y-sabroso-a-bajo-costo/"Target="5"><p style="color: white;"><b>More information</b></p></a>
+      </div>
+    
+      <div class="card">
+        <h2>Eat healthy and tasty at <br>low cost</h2>
+        <p>Today more than ever creativity and savings are fundamental tools to ensure a varied and balanced diet.</p>
+        <a href="https://www.fundacionbengoa.org/nuestros-intereses/guias/campana-juntos-contra-la-malnutricion/guia-16-refuerza-tus-defensas-en-cuarentena/" Target="1"><p style="color: white;"><b>More information</b></p></a>
+      </div>
+        <div class="card">
+        <h2>Strengthen your defenses in Quarantine</h2>
+        <p>The Coronavirus pandemic has drastically changed our rhythm of life, generating new challenges that must be faced in relation to functioning and coexistence in a situation of global alert.</p>
+        <a href="https://www.fundacionbengoa.org/nuestros-intereses/guias/campana-juntos-contra-la-malnutricion/guia-14-nutrientes-esenciales-en-tu-cocina/" target="2"><p style="color: white;"><b>More information</b></p></a>
+      </div>
+    
+      <div class="card">
+        <h2>Essential Nutrients in your kitchen</h2>
+        <p>Vitamins and minerals are essential for life, they stimulate the functioning of the inmune system, promote growth and regulate the chemical reactions that occur in cells.</p>
+        <a href="https://www.fundacionbengoa.org/nuestros-intereses/guias/guias-de-alimentacion-en-venezuela/guias-de-alimentacion-en-el-nino-menor-de-6-anos/"target="3"><p style="color: white;"><b>More information</b></p></a>
+      </div>
+    
+      <div class="card">
+        <h3>Feeding guidelines for children under 6 years of age</h2>
+        <p>These guidelines adapt the nutritional recommendations the "should be" to the Venezuelan reality, with the aim of helping to improve the nutritional status of the child population.</p>
+        <a href="https://www.fundacionbengoa.org/nuestros-intereses/guias/campana-juntos-contra-la-malnutricion/guia-6-alimentos-con-todos-los-hierros/" target="4"><p style="color: white;"><b>More information</b></p></a>
+      </div>
+    </section> 
+  
+  
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <section class="contactenos">
+    <div class="grid-container">
+      <div class="grid-item"></div>
+      <div class="grid-item"><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+      <div class="grid-item">  <a href="#first"><img src="https://i.postimg.cc/CLZfhCHT/roselyn.png"width="150%"></a></div>
+        <div class="grid-item">
+            <a href="https://www.instagram.com/spreading._hope/"><img src="https://i.postimg.cc/jjttLKN0/Logo-M-stico-M-gico-Esot-rico-Violeta-preview-rev-1.png" width="7%" align="right" target="15"></a>
+            <a href="https://m.facebook.com/spreadin.hope?tsid=0.6948586830162029&source=result"><img src="https://i.postimg.cc/rwcwtSXP/La-empresa-3-preview-rev-1.png" width="12%" align="right"></a>
+            <a href="https://twitter.com/spreadinghope3"><img src="https://i.postimg.cc/4N01fNDy/rt-preview-rev-1-1.png" width="8.4%" align="right"></a>
+            <a href="https://mail.google.com/mail/u/0/?ogbl#search/spreading+hope"><img src="https://i.postimg.cc/G3JNmYK2/gmail.png" width="9%" align="right"></a>
+            <br><br>
+            <p align="right"><FONT SIZE=40 face="Arial" color="white"><b>Contact us</b></FONT></p>
+            <a href="https://mail.google.com/mail/u/0/?ogbl#inbox?compose=CllgCJfscjzmwWGQnKsxMfSfQxtSjFfLGPvqRHrPbKLmZJRTcQnfQhmCrVPPMDjWRpLrmmDrZWL" align="right" style="color:white"><p style="font-size:20px;" style="text-align: right;"><FONT SIZE=5 face="Arial">Spreadinghope@gmail.com</FONT></p></a>
+            <p style="color: white; margin: 0;" align="right"><FONT SIZE=5% face="Arial">Address</FONT></p>
+            <p style="color: white; margin: 0;" align="right"><FONT SIZE=5% face="Arial">Phone Number</FONT></p>
+            <p style="color: white; margin: 0;" align="right"><FONT SIZE=5% face="Arial">+507-6030-9840</FONT></p>
+        </div>
+      <a id="contacto"></a>
+  </section>
+</body>
+</html>
